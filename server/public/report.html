@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate Project Report</title>
+</head>
+<body>
+    <h1>Generate Project Report</h1>
+    <form id="reportForm">
+        <label for="start_date">Start Date:</label>
+        <input type="date" id="start_date" name="start_date" required>
+        <br>
+        <label for="end_date">End Date:</label>
+        <input type="date" id="end_date" name="end_date" required>
+        <br>
+        <button type="submit">Generate Report</button>
+    </form>
+
+    <script>
+        document.getElementById('reportForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const startDate = document.getElementById('start_date').value;
+            const endDate = document.getElementById('end_date').value;
+
+            const url = `/generate_report?start_date=${startDate}&end_date=${endDate}`;
+            window.location.href = url;
+        });
+    </script>
+</body>
+</html>
