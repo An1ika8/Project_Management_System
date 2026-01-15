@@ -1,0 +1,176 @@
+/* Profile Container */
+.profile-container {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Profile Header */
+.profile-header h2 {
+    color: #333;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    text-align: center;  /* Center header */
+}
+
+/* Profile Info */
+.profile-info2 {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.profile-info2 span {
+    display: inline-block;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.profile-info2 p {
+    color: #777;
+    margin-bottom: 15px;
+}
+
+/* Profile Form */
+.profile-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Label */
+.profile-form label {
+    font-weight: 500;
+    color: #555;
+    font-size: 16px;
+}
+
+/* Input & Select */
+.profile-form input,
+.profile-form select {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    background: #f9f9f9;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.profile-form input:focus,
+.profile-form select:focus {
+    border-color: #007bff;
+    outline: none;
+    background-color: #fff;
+}
+
+/* Button */
+.btn {
+    display: inline-block;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+    width: 100%;  /* Full width for better button alignment */
+    margin-top: 10px; /* Add spacing between buttons */
+}
+
+/* Primary Button */
+.btn-primary {
+    background-color: #007bff;
+    color: white;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Danger Button */
+.btn-danger {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+}
+
+/* Back Button - Custom */
+.btn-back-home {
+    background-color: #28a745;
+    color: white;
+    border: none;
+}
+
+.btn-back-home:hover {
+    background-color: #218838;
+}
+
+/* Input Field Focus */
+.profile-form input:focus,
+.profile-form select:focus {
+    border-color: #0056b3; /* Change the focus border color */
+    box-shadow: 0 0 5px rgba(0, 86, 179, 0.5); /* Add subtle shadow effect */
+}
+
+/* Hover effects for all form elements */
+.profile-form input:hover,
+.profile-form select:hover {
+    border-color: #007bff;
+}
+
+/* Buttons Section */
+.profile-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    flex-wrap: wrap;  /* Allow buttons to wrap */
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .profile-container {
+        max-width: 90%;
+        margin: 20px;
+        padding: 15px;
+    }
+
+    .profile-header h2 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    .profile-info {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    .profile-form input,
+    .profile-form select {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    /* Stack buttons vertically on small screens */
+    .profile-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn {
+        width: 100%; /* Ensure buttons take full width on smaller screens */
+        margin-top: 15px;
+    }
+}

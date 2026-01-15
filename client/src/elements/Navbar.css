@@ -1,0 +1,49 @@
+/* Navbar */
+.navbar {
+    background-color: #333;
+    padding: 10px 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    width: 98%;
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+/* Navbar Links Container */
+.navbar-links {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+/* Navbar List Items */
+.navbar-li {
+    flex-grow: 1; /* Ensures all items have equal width */
+    text-align: center;
+    padding: 10px;
+    background-color: #444; /* Same background color for all items */
+    border-radius: 4px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover Effect */
+.navbar-li:hover {
+    background-color: #20354b; /* Same hover color for all */
+    transform: scale(1.05);
+}
+
+/* Navbar Link Styling */
+.navbar-link {
+    text-decoration: none;
+    color: rgb(12, 2, 56);
+    font-size: 16px;
+    display: block;
+    padding: 10px 15px;
+}
+
+/* Active Link Style */
+
+
